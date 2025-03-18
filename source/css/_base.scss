@@ -1,0 +1,21 @@
+$red: #D61336;
+$red-dark: #AB052E;
+$dark: #0D1823;
+$dark-light: #202B39;
+
+@mixin btn {
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    @include btn;
+}
