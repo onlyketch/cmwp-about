@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	svgSprite = require('gulp-svg-sprite'),
 	ttf2woff = require('gulp-ttf2woff'),
 	ttf2woff2 = require('gulp-ttf2woff2'),
+	typograf = require("gulp-typograf"),
 	cache = require('gulp-cache');
 
 
@@ -48,6 +49,8 @@ gulp.task('img', function() {
 
 gulp.task('html', function() {
 	return gulp.src('source/*.html')
+		.pipe(typograf({
+		locale: ["ru", "en-US"]}))
 		.pipe(gulp.dest('dist'))
 		.pipe(browserSync.reload({ stream: true }))
 });

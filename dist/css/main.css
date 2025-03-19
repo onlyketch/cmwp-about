@@ -1,0 +1,333 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Medium.woff2") format("woff2"), url("../fonts/RobotoCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-ExtraBold.woff2") format("woff2"), url("../fonts/RobotoCondensed-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Condensed";
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Black.woff2") format("woff2"), url("../fonts/RobotoCondensed-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Caveat";
+  src: local("Caveat"), url("../fonts/Caveat-Regular.woff2") format("woff2"), url("../fonts/Caveat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), url("../fonts/RobotoMono-Regular.woff2") format("woff2"), url("../fonts/RobotoMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), url("../fonts/RobotoMono-Medium.woff2") format("woff2"), url("../fonts/RobotoMono-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), url("../fonts/RobotoMono-Bold.woff2") format("woff2"), url("../fonts/RobotoMono-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), url("../fonts/RobotoMono-Thin.woff2") format("woff2"), url("../fonts/RobotoMono-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto Mono";
+  src: local("Roboto Mono"), url("../fonts/RobotoMono-Light.woff2") format("woff2"), url("../fonts/RobotoMono-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.page-wrapper {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0D1823;
+}
+.page-wrapper .container {
+  max-width: 1440px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+@media (max-width: 767px) {
+  .page-wrapper .container {
+    padding: 0 16px;
+  }
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -1.5px;
+  color: white;
+  max-width: 668px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -1px;
+  max-width: 569px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  white-space: nowrap;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.quality-card {
+  position: relative;
+  padding: 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #F3F3F3;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  height: 512px;
+  margin-right: 16px;
+}
+.quality-card:last-child {
+  margin-right: 0;
+}
+.quality-card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+.quality-card__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+.quality-card__text {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.7;
+  margin-top: 12px;
+}
+.quality-card__bottom {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-top: auto;
+}
+.quality-card__shapes {
+  position: absolute;
+  bottom: 103px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.quality-card__shapes svg {
+  background: transparent;
+}
+
+.running-title {
+  font-size: 12px;
+  line-height: 12px;
+  color: #0D1823;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.running-title__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.running-title__page-num {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #D61336;
+}
+.running-title__page-name {
+  margin-left: 207px;
+}
+.running-title.white {
+  color: white;
+}

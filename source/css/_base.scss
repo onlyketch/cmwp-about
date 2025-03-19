@@ -1,5 +1,6 @@
 $red: #D61336;
 $red-dark: #AB052E;
+$light-gray: #F3F3F3;
 $dark: #0D1823;
 $dark-light: #202B39;
 
@@ -16,6 +17,152 @@ html {
     scroll-behavior: smooth;
 }
 
+.page-wrapper {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $dark;
+
+    .container {
+        max-width: 1440px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 48px;
+
+        @media (max-width: 767px) {
+            padding: 0 16px;
+        }
+    }
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -1.5px;
+    color: white;
+    max-width: 668px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: -1px;
+    max-width: 569px;
+}
+
+a {
+    text-decoration: none;
+    appearance: none;
+    white-space: nowrap;
+}
+
 .btn {
     @include btn;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+.quality-card {
+    position: relative;
+    padding: 28px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: $light-gray;
+    backdrop-filter: blur(16px);
+    height: 512px;
+    margin-right: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        opacity: 0.7;
+        margin-top: 12px;
+    }
+
+    &__bottom {
+        font-family: 'Roboto Mono', sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 11px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        opacity: 0.6;
+        margin-top: auto;
+    }
+
+    &__shapes {
+        position: absolute;
+        bottom: 103px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        svg {
+            background: transparent;
+        }
+    }
+}
+
+.running-title {
+    font-size: 12px;
+    line-height: 12px;
+    color: $dark;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    user-select: none;
+
+    &__info {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__page-num {
+        font-family: 'Roboto Mono', sans-serif;
+        font-weight: 400;
+        letter-spacing: -1px;
+        color: $red;
+    }
+
+    &__page-name {
+        margin-left: 207px;
+    }
+
+    &__company {
+    }
+
+    &.white {
+        color: white;
+    }
 }
