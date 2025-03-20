@@ -1,0 +1,61 @@
+@use "base" as *;
+
+.parallax-area {
+
+    &__body {
+        position: relative;
+        background-color: $white;
+        border-radius: 0 0 8px 8px;
+        padding: 0 0 48px 0;
+        z-index: 10;
+        overflow: hidden;
+
+        &-first {
+            padding: 86px 0 48px 0;
+        }
+    }
+
+    &__body-sticky {
+        display: none;
+    }
+
+    &__body-sticky-title {
+    }
+
+    &__body-sticky-text {
+    }
+
+    &__body-sticky-image {
+    }
+
+    &__footer {
+        position: relative;
+        background-color: $red;
+        padding: 973px 24px 24px 24px;
+        top: -6px;
+        z-index: 5;
+    }
+
+    &__footer-area {
+        background-color: $white;
+        border-radius: 8px;
+        padding: 0 24px 24px 24px;
+
+        &-second {
+            padding: 86px 24px 24px 24px;
+        }
+    }
+
+    &__footer-box {
+        
+    }
+
+    &__footer-box-container {
+        max-width: 1344px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+}
+

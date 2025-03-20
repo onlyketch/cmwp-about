@@ -22,19 +22,22 @@
         <div class="hero">
             <div class="container">
                 <div class="hero__wrapper">
-                    <h1 class="hero__title">О компании</h1>
                     <div class="hero__focus">
                         <div class="hero__focus-slogan">Быть полезными не только для бизнеса, но и для людей.</div>
                         <div class="hero__focus-words">
                             <div class="hero__focus-words-word">Исследуем</div>
+                            <div class="hero__focus-words-word">Внедряем</div>
+                            <div class="hero__focus-words-word">Вдохновляем</div>
+                            <div class="hero__focus-words-word">Масштабируем</div>
                         </div>
                     </div>
+                    <h1 class="hero__title">О компании</h1>
                 </div>
             </div>
         </div>
 
         <div class="parallax-area">
-            <div class="parallax-area__body">
+            <div class="parallax-area__body parallax-area__body-first">
                 <div class="parallax-area__body-sticky">
                     <div class="parallax-area__body-sticky-title">Благодаря этим столпам мы максимизируем финансовый успех наших клиентов</div>
                     <div class="parallax-area__body-sticky-text">
@@ -52,10 +55,10 @@
                             <div class="text-info__columns">
                                 <div class="text-info__columns-col">
                                     <p class="text-info__columns-col-text">
-                                        Ведущая российская компания, оказывающая консультационные, инвестиционные и агентские услуги в сфере коммерческой недвижимостив России и СНГ.
+                                        Ведущая российская компания, оказывающая консультационные, инвестиционные и агентские услуги в сфере коммерческой недвижимости<br>в России и СНГ.
                                     </p>
                                     <p class="text-info__columns-col-text">
-                                        Мы помогаем нашим клиентам в принятии взвешенных решений в сфере коммерческой недвижимости, предлагая креативные и инновационные решения для девелоперов, инвесторов, корпораций, государственных учреждений и организаций по всей России и СНГ, сопровождая проекты на всех этапах реализации
+                                        Мы помогаем нашим клиентам в принятии взвешенных решений в сфере коммерческой недвижимости, предлагая креативные и инновационные решения для девелоперов, инвесторов, корпораций, государственных учреждений и организаций по всей России и СНГ, сопровождая проекты на всех этапах реализации.
                                     </p>
                                 </div>
                                 <div class="text-info__columns-col">
@@ -68,21 +71,27 @@
                     </div>
 
                     <div class="cmwp-video">
-                        <video poster="images/video-prev.jpg" preload="none">
-                            <source src="https://html5book.ru/wp-content/themes/papercuts/video/martynko.mp4" type="video/mp4">
+                        <div class="cmwp-video__caption">Видео о компании</div>
+                        <video poster="images/video-prev.jpg" preload="auto" id="cmwp-video">
+                            <source src="video/cmwp.mp4" type="video/mp4">
                         </video>
-                        <button class="cmwp-video__play-btn">play</button>
+                        <button class="cmwp-video__play-btn">
+                            <svg width="21" height="28" viewBox="0 0 21 28"><use xlink:href="icons/stack/icons.svg#play"></use></svg>
+                        </button>
+                        <button class="cmwp-video__pause-btn">
+                            <svg width="21" height="28" viewBox="0 0 21 28"><use xlink:href="icons/stack/icons.svg#pause"></use></svg>
+                        </button>
                     </div>
 
                     <div class="text-info">
-                        <div class="text-info__wrapper">
-                            <div class="running-title">
-                                <div class="running-title__info">
-                                    <span class="running-title__page-num">1.0</span>
-                                    <div class="running-title__page-name">Наш подход</div>
-                                </div>
-                                <div class="running-title__company">Commonwealth Partnership</div>
+                        <div class="running-title">
+                            <div class="running-title__info">
+                                <span class="running-title__page-num">1.0</span>
+                                <div class="running-title__page-name">Наш подход</div>
                             </div>
+                            <div class="running-title__company">Commonwealth Partnership</div>
+                        </div>
+                        <div class="text-info__wrapper">
                             <h2 class="text-info__title">Индивидуальный подход</h2>
                             <div class="text-info__columns">
                                 <div class="text-info__columns-col">
@@ -96,7 +105,8 @@
 
                     <div class="cards">
                         <div class="cards__heading">
-                            Всё это возможно благодаря 3 столпам:
+                            Всё это возможно<br>
+                            благодаря 3 столпам:
                         </div>
                         <div class="cards__row">
                             <div class="quality-card">
@@ -105,7 +115,20 @@
                                     <div class="quality-card__text">Исследования позволяют нам быть адаптивными и актуальными</div>
                                     <div class="quality-card__bottom">01</div>
                                     <div class="quality-card__shapes">
-                                        <svg width="381" height="191" viewBox="0 0 381 191"><use xlink:href="icons/stack/icons.svg#research"></use></svg>
+                                        <svg width="381" height="191" viewBox="0 0 381 191" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="176.5" cy="86.5003" r="79" stroke="#0D1823" stroke-opacity="0.4"/>
+                                            <circle cx="68.998" cy="53.0007" r="31.5" stroke="#D61336"/>
+                                            <circle cx="53" cy="138" r="52.5" stroke="#0D1823" stroke-opacity="0.4"/>
+                                            <circle cx="105.997" cy="18" r="17.5" stroke="#0D1823" stroke-opacity="0.4"/>
+                                            <line x1="176.997" y1="95.4976" x2="380.997" y2="95.4976" stroke="url(#paint0_linear_539_735)"/>
+                                            <circle cx="255.5" cy="95.5" r="4.5" fill="#D61336"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_539_735" x1="176.997" y1="96.4976" x2="380.997" y2="96.4976" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D61336" stop-opacity="0"/>
+                                            <stop offset="1" stop-color="#D61336"/>
+                                            </linearGradient>
+                                            </defs>
+                                            </svg>
                                     </div>
                                 </div>
                             </div>
@@ -179,14 +202,14 @@
                     <div class="parallax-area__footer-box">
                         <div class="parallax-area__footer-box-container">
                             <div class="text-info">
-                                <div class="text-info__wrapper">
-                                    <div class="running-title">
-                                        <div class="running-title__info">
-                                            <span class="running-title__page-num">2.0</span>
-                                            <div class="running-title__page-name">История компании</div>
-                                        </div>
-                                        <div class="running-title__company">Commonwealth Partnership</div>
+                                <div class="running-title">
+                                    <div class="running-title__info">
+                                        <span class="running-title__page-num">2.0</span>
+                                        <div class="running-title__page-name">История компании</div>
                                     </div>
+                                    <div class="running-title__company">Commonwealth Partnership</div>
+                                </div>
+                                <div class="text-info__wrapper text-info__wrapper-footer">
                                     <h2 class="text-info__title">Commonwealth Partnership основана в Москве и успешно работает уже более 30 лет</h2>
                                     <div class="text-info__columns">
                                         <div class="text-info__columns-col">
@@ -203,7 +226,12 @@
                                     <div class="years-evetns__slider-slide">
                                         <div class="years-evetns__slider-slide-year">1995</div>
                                         <div class="years-evetns__slider-slide-ruler">
-                                            <div class="years-evetns__slider-slide-ruler-point"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-point">
+                                                <div class="years-evetns__slider-slide-ruler-point-segment"></div>
+                                            </div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
@@ -217,12 +245,18 @@
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
+
                                         </div>
                                     </div>
-                                    <div class="years-evetns__slider-slide">
+                                    <div class="years-evetns__slider-slide active">
                                         <div class="years-evetns__slider-slide-year">1998</div>
                                         <div class="years-evetns__slider-slide-ruler">
-                                            <div class="years-evetns__slider-slide-ruler-point"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-point">
+                                                <div class="years-evetns__slider-slide-ruler-point-segment"></div>
+                                            </div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
@@ -236,12 +270,18 @@
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
+
                                         </div>
                                     </div>
                                     <div class="years-evetns__slider-slide">
                                         <div class="years-evetns__slider-slide-year">2005</div>
                                         <div class="years-evetns__slider-slide-ruler">
-                                            <div class="years-evetns__slider-slide-ruler-point"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-point">
+                                                <div class="years-evetns__slider-slide-ruler-point-segment"></div>
+                                            </div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
@@ -255,12 +295,18 @@
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
+
                                         </div>
                                     </div>
                                     <div class="years-evetns__slider-slide">
                                         <div class="years-evetns__slider-slide-year">2009</div>
                                         <div class="years-evetns__slider-slide-ruler">
-                                            <div class="years-evetns__slider-slide-ruler-point"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-point">
+                                                <div class="years-evetns__slider-slide-ruler-point-segment"></div>
+                                            </div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
@@ -274,12 +320,18 @@
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
+
                                         </div>
                                     </div>
                                     <div class="years-evetns__slider-slide">
                                         <div class="years-evetns__slider-slide-year">2022</div>
                                         <div class="years-evetns__slider-slide-ruler">
-                                            <div class="years-evetns__slider-slide-ruler-point"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-segment"></div>
+                                            <div class="years-evetns__slider-slide-ruler-point">
+                                                <div class="years-evetns__slider-slide-ruler-point-segment"></div>
+                                            </div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
@@ -293,6 +345,7 @@
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
                                             <div class="years-evetns__slider-slide-ruler-segment"></div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -379,7 +432,7 @@
                                             <div class="facts__items-item">
                                                 <div class="facts__items-item-value">1995</div>
                                                 <div class="facts__items-item-text">
-                                                    Год основания компании в России
+                                                    Год основания компании<br>в России
                                                 </div>
                                             </div>
                                             <div class="facts__items-item">
@@ -399,7 +452,7 @@
                                             <div class="facts__items-item">
                                                 <div class="facts__items-item-value">300+</sup></div>
                                                 <div class="facts__items-item-text">
-                                                    Профессионалов в составе команды CMWP
+                                                    Профессионалов в составе<br>команды CMWP
                                                 </div>
                                             </div>
                                             <div class="facts__items-item">
@@ -418,6 +471,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -440,14 +494,14 @@
                 <div class="container">
 
                     <div class="text-info">
-                        <div class="text-info__wrapper">
-                            <div class="running-title">
-                                <div class="running-title__info">
-                                    <span class="running-title__page-num">3.0</span>
-                                    <div class="running-title__page-name">Награды компании</div>
-                                </div>
-                                <div class="running-title__company">Commonwealth Partnership</div>
+                        <div class="running-title">
+                            <div class="running-title__info">
+                                <span class="running-title__page-num">3.0</span>
+                                <div class="running-title__page-name">Награды компании</div>
                             </div>
+                            <div class="running-title__company">Commonwealth Partnership</div>
+                        </div>
+                        <div class="text-info__wrapper">
                             <h2 class="text-info__title">Наши награды</h2>
                             <div class="text-info__columns">
                                 <div class="text-info__columns-col">
@@ -462,7 +516,7 @@
                     <div class="awards">
                         <div class="awards__controls">
                             <div class="awards__tabs">
-                               <div class="awards__tabs-tab">Cre awards</div>
+                               <div class="awards__tabs-tab active">Cre awards</div>
                                <div class="awards__tabs-tab">Персональные премии</div>
                                <div class="awards__tabs-tab">Best office awards</div>
                                <div class="awards__tabs-tab">green property awards</div>
@@ -676,7 +730,7 @@
                 </div>
             </div>
             <div class="parallax-area__footer">
-                <div class="parallax-area__footer-area">
+                <div class="running-title-absolute">
                     <div class="container">
                         <div class="running-title white">
                             <div class="running-title__info">
@@ -686,6 +740,8 @@
                             <div class="running-title__company">Commonwealth Partnership</div>
                         </div>
                     </div>
+                </div>
+                <div class="parallax-area__footer-area parallax-area__footer-area-second">
                     <div class="parallax-area__footer-box">
                         <div class="parallax-area__footer-box-container">
 
@@ -712,7 +768,7 @@
                                             <div class="quality-card__shapes">
                                                 <svg width="381" height="191" viewBox="0 0 381 191"><use xlink:href="icons/stack/icons.svg#research"></use></svg>
                                             </div>
-                                            <div class="quality-card__hidden-text hide">
+                                            <div class="quality-card__hidden-text">
                                                 В нашей компании мы хотим быть ближе и приветствуем общение на «ты». Мы любим людей, которые приходят к нам в офис. Мы здороваемся со всеми, даже если мы не знаем каждого.
                                             </div>
                                         </div>
@@ -729,7 +785,7 @@
                                             <div class="quality-card__shapes">
                                                 <svg width="381" height="191" viewBox="0 0 381 191"><use xlink:href="icons/stack/icons.svg#research"></use></svg>
                                             </div>
-                                            <div class="quality-card__hidden-text hide">
+                                            <div class="quality-card__hidden-text">
                                                 Мы выполняем принятые на себя обязательства с точки зрения задач, компетенций, времени и нашей доступности для реализации проектов. Мы ведём себя ответственно. Мы уважаем данное слово и верны своему выбору.
                                             </div>
                                         </div>
@@ -748,7 +804,7 @@
                                             <div class="quality-card__shapes">
                                                 <svg width="381" height="191" viewBox="0 0 381 191"><use xlink:href="icons/stack/icons.svg#research"></use></svg>
                                             </div>
-                                            <div class="quality-card__hidden-text hide">
+                                            <div class="quality-card__hidden-text">
                                                 Руководство — это душа и сердце команды, а не палач, поэтому внутри мы прозрачны и открыты в коммуникации — мы всегда говорим, что думаем, радуемся победам и прямо говорим о проблемах, ничего не скрывая. Точно так же мы открыты и с клиентами, всегда говоря о хорошем и плохом, а также слышими слушаем обратную связь, чтобы совершенствоваться.
                                             </div>
                                         </div>
@@ -765,7 +821,7 @@
                                             <div class="quality-card__shapes">
                                                 <svg width="381" height="191" viewBox="0 0 381 191"><use xlink:href="icons/stack/icons.svg#research"></use></svg>
                                             </div>
-                                            <div class="quality-card__hidden-text hide">
+                                            <div class="quality-card__hidden-text">
                                                 Мы активно вовлекаем всех сотрудников и лидеров в проекты. И придерживаемся принципа справедливого обмена информацией без дискриминации. Мы стремимся объединять и поощрять друг друга к развитию и действию.
                                             </div>
                                         </div>
@@ -782,7 +838,7 @@
                                             <div class="quality-card__shapes">
                                                 <svg width="381" height="191" viewBox="0 0 381 191"><use xlink:href="icons/stack/icons.svg#research"></use></svg>
                                             </div>
-                                            <div class="quality-card__hidden-text hide">
+                                            <div class="quality-card__hidden-text">
                                                 Мы доверяем нашим сотрудникам и знаем, что они делают свою работу профессионально и ответственно. Мы не ищем виноватых и не обесцениваем работу и точку зрения коллег. Мы подходим к решению вместе — так, чтобы каждый сотрудник чувствовал себя сопричастным.
                                             </div>
                                         </div>
@@ -815,14 +871,14 @@
                 <div class="container">
 
                     <div class="text-info">
-                        <div class="text-info__wrapper">
-                            <div class="running-title">
-                                <div class="running-title__info">
-                                    <span class="running-title__page-num">5.0</span>
-                                    <div class="running-title__page-name">Айдентика бренда</div>
-                                </div>
-                                <div class="running-title__company">Commonwealth Partnership</div>
+                        <div class="running-title">
+                            <div class="running-title__info">
+                                <span class="running-title__page-num">5.0</span>
+                                <div class="running-title__page-name">Айдентика бренда</div>
                             </div>
+                            <div class="running-title__company">Commonwealth Partnership</div>
+                        </div>
+                        <div class="text-info__wrapper">
                             <h2 class="text-info__title">Айдентика бренда</h2>
                             <div class="text-info__columns">
                                 <div class="text-info__columns-col">
