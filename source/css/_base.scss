@@ -150,9 +150,16 @@ img {
         position: absolute;
         bottom: 28px;
         right: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &-plus {
             padding-bottom: 1px;
+        }
+
+        &-minus {
+            display: none;
         }
     }
 
@@ -160,10 +167,36 @@ img {
         display: none;
         font-size: 14px;
         opacity: 0.7;
+        position: absolute;
+        bottom: 96px;
+        left: 28px;
+        right: 28px;
     }
 
     &-clickable {
         cursor: pointer;
+        user-select: none;
+    }
+
+    &-clickable.active &__shapes {
+        display: none;
+    }
+
+    &-clickable.active &__hidden-text {
+        display: block;
+    }
+
+    &-clickable.active &__more-btn {
+        background: $red;
+
+        &-plus {
+            display: none;
+        }
+
+        &-minus {
+            display: block;
+        }
+
     }
 }
 
@@ -462,6 +495,50 @@ img {
             }
         }
 
+    }
+}
+
+.page-nav {
+    background: rgba(243, 243, 243, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    padding: 20px;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 500;
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__links-link {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+        color: $dark;
+        margin-right: 20px;
+        transition: all .3s ease;
+
+        &:hover {
+            color: $red;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.mobile-nav {
+
+    &__button {
+
+        &-line {
+            
+        }
     }
 }
 

@@ -3,12 +3,20 @@
 .years-evetns {
 
     &__slider {
-        display: flex;
         margin-bottom: 48px;
         height: 86px;
+
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            flex-shrink: 0;
+        }
     }
 
     &__slider-slide {
+        cursor: grabbing;
 
         &-year {
             font-family: 'Roboto Mono', sans-serif;
@@ -33,12 +41,14 @@
                 margin-right: 16px;
                 display: flex;
                 justify-content: center;
+                cursor: pointer;
 
                 &-segment {
                     flex-shrink: 0;
                     width: 1px;
                     height: 1px;
                     background-color: transparent;
+                    transition: all .2s ease;
                 }
             }
 
@@ -47,6 +57,7 @@
                 height: 8px;
                 background-color: $dark;
                 margin-right: 16px;
+                transition: all .2s ease;
             }
         }
 

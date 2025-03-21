@@ -1,0 +1,44 @@
+.clients {
+
+    &__logos {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 193px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        animation: clients-marquee 40s linear infinite;
+    }
+
+    &__item {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-color: #F3F3F3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        user-select: none;
+        pointer-events: none;
+        margin-right: 1px;
+
+        img {
+            transform: scale(0.5);
+        }
+    }
+}
+
+@keyframes clients-marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
