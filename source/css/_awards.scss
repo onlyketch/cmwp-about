@@ -24,6 +24,7 @@
             transition: all .2s ease;
             margin-right: 8px;
             cursor: pointer;
+            white-space: nowrap;
 
             &:last-child {
                 margin-right: 0;
@@ -32,6 +33,15 @@
             &.active {
                 background-color: $dark;
                 color: #EFEFEF;
+            }
+
+            @media (max-width: 1159px) {
+                font-size: 10px;
+            }
+
+            @media (max-width: 1023px) {
+                font-size: 12px;
+                line-height: 12px;
             }
         }
     }
@@ -62,14 +72,28 @@
 
             &-main {
                 max-width: 550px;
+
+                @media (max-width: 1023px) {
+                    height: 448px;
+                    max-width: 336px;
+                }
             }
 
             &-main &-wrapper {
                 display: flex;
+
+                @media (max-width: 1023px) {
+                    flex-direction: column;
+                }
             }
 
             &-main &-info {
                 margin-left: 24px;
+
+                @media (max-width: 1023px) {
+                    margin-left: 0;
+                    margin-top: 24px;
+                }
             }
 
             &-main &-sign {

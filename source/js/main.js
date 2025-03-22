@@ -60,8 +60,21 @@ document.addEventListener('DOMContentLoaded', function() {
         dots: false,
         touchThreshold: 50,
         speed: 300,
-        infinite: true
+        infinite: true,
+        asNavFor: '.years-evetns__items',
+        focusOnSelect: true
     });
+
+    $('.years-evetns__items').slick({
+        slidesToShow: 1,
+        asNavFor: '.years-evetns__slider',
+        arrows: false,
+        draggable: false,
+        swipe: false,
+        touchMove: false,
+        accessibility: false,
+        speed: 1000
+      });
 
     $('.years-evetns__slider').on('afterChange', function(event, slick, currentSlide){
         slick.$slideTrack.css('transform', `translate3d(${slick.swipeLeft}px, 0px, 0px)`);
@@ -82,12 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let activeSlide = $('.years-evetns__slider .slick-current');
         let numSlide = activeSlide.data('slide');
 
-        for (let item of yearsEvetnsItems) {
-            if (item.classList.contains('show')) {
-                item.classList.remove('show'); 
-            }
-        }
-
         for (let item of yearsEvetnsSlides) {
             if (item.classList.contains('active')) {
                 item.classList.remove('active'); 
@@ -95,8 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         $('.years-evetns__slider .slick-current').addClass('active');
-        yearsEvetnsItems[numSlide].classList.add('show');
     });
+
 
      // Слайдер награды
 
@@ -116,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         arrows: false,
         dots: false,
         touchThreshold: 50,
-        speed: 150
+        speed: 500
     });
 
     controlsAwardsButtonRight.addEventListener('click', function() {
@@ -132,26 +139,71 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.awards__slider').slick('slickGoTo', slideIndex); // Перемещаем слайдер
     });
 
-    $('.awards__slider').on('afterChange', function(event, slick, currentSlide) {
-        if (currentSlide == 0 || currentSlide == 5 || currentSlide == 8 || currentSlide == 12 || currentSlide == 14) {
-            $('.awards__tabs-tab').removeClass('active'); // Убираем активный класс у всех табов
-            $('.awards__tabs-tab[data-slide="'+ currentSlide +'"]').addClass('active'); // Добавляем активный класс текущему
-            
+    $('.awards__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        if ([0, 5, 8, 12, 14].includes(nextSlide)) {
+            $('.awards__tabs-tab').removeClass('active');
+            $('.awards__tabs-tab[data-slide="'+ nextSlide +'"]').addClass('active');
         }
-        
     });
 
-      // Кликабельные карточки
+    // Кликабельные карточки
 
       let qualityCardsClickable = document.querySelectorAll('.quality-card-clickable');
 
       for (let i = 0; i < qualityCardsClickable.length; i++) {
         qualityCardsClickable[i].addEventListener('click', function() {
             qualityCardsClickable[i].classList.toggle('active');
-            //let shapes = qualityCardsClickable[i].querySelector('.quality-card__shapes');
-
         });
       }
+
+
+    // Меню мобильное
+
+    if (document.querySelector('.page-nav') !== null) {
+        let pageNav = document.querySelector('.page-nav');
+        let pageNavButton = document.querySelector('.page-nav__button');
+        let pageNavLinks = document.querySelectorAll('.page-nav__links-link');
+
+        pageNavButton.addEventListener('click', function() {
+            pageNav.classList.toggle('open');
+        });
+
+        for (let i = 0; i < pageNavLinks.length; i++) {
+            pageNavLinks[i].addEventListener('click', function() {
+                if (window.innerWidth <= 767) {
+                    if (pageNav.classList.contains('open')) {
+                        pageNav.classList.remove('open');
+                    }
+    
+                    // Преобразуем NodeList в массив
+                    let linksArray = Array.from(pageNavLinks);
+    
+                    // Найдём индекс кликнутого элемента
+                    let clickedIndex = linksArray.indexOf(this);
+    
+                    if (clickedIndex > -1) {
+                        // Удаляем элемент из его текущей позиции
+                        let clickedElement = linksArray.splice(clickedIndex, 1)[0];
+                
+                        // Добавляем его в начало массива
+                        linksArray.unshift(clickedElement);
+    
+                        // Переставляем элементы в DOM
+                        let parent = this.parentElement; // Предполагаем, что все ссылки внутри одного родителя
+                        linksArray.forEach(link => parent.appendChild(link));
+                    }
+                }
+            });
+        }
+    }
+
+    // Мобильные слайдеры
+
+
+
+
+
+
 
 
 

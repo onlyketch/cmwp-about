@@ -13,8 +13,16 @@
             height: 973px;
             z-index: 10;
 
+            @media (max-width: 1023px) {
+                height: 727px;
+            }
+
             &-second {
                 height: 1354px;
+
+                @media (max-width: 1023px) {
+                    height: 822px;
+                }
             }
 
             &-third {
@@ -33,7 +41,19 @@
 
         &-first {
             padding: 86px 0 48px 0;
+
+            @media (max-width: 1023px) {
+                padding: 42px 0 16px 0;
+            }
         }
+
+        &-third {
+            @media (max-width: 1023px) {
+                padding-bottom: 16px;
+            }
+        }
+
+        
     }
 
     &__sticky-container {
@@ -57,12 +77,24 @@
             padding-bottom: 227px;
             background: transparent;
 
+            @media (max-width: 1023px) {
+                padding-top: 100px;
+                padding-bottom: 93px;
+                top: 100px;
+            }
+
             &-title {
                 font-weight: 500;
                 font-size: 40px;
                 line-height: 46px;
                 text-align: center;
                 letter-spacing: -1px;
+
+                @media (max-width: 1023px) {
+                    font-size: 32px;
+                    line-height: 38px;
+                    max-width: 358px;
+                }
             }
 
             &-text {
@@ -72,6 +104,10 @@
                 text-align: center;
                 max-width: 440px;
                 margin-top: 36px;
+
+                @media (max-width: 1023px) {
+                    max-width: 358px;
+                }
             }
 
             &-image {
@@ -83,12 +119,21 @@
                     width: 100%;
                     height: 100%;
                 }
+
+                @media (max-width: 1023px) {
+                    width: 229px;
+                    height: 128px;
+                }
             }
 
             &-second {
                 padding: 0;
                 top: 0;
                 padding-top: 159px;
+
+                @media (max-width: 1023px) {
+                    padding-top: 126px;
+                }
             }
 
             &-second &-image {
@@ -99,6 +144,13 @@
                 img {
                     width: 100%;
                     height: 100%;
+                }
+
+                @media (max-width: 1023px) {
+                    margin-top: 75px;
+                    width: 272px;
+                    height: 355px;
+                    margin-bottom: 4px;
                 }
             }
 
@@ -111,6 +163,12 @@
                 max-width: 650px;
                 margin-top: 24px;
                 margin-bottom: 100px;
+
+                @media (max-width: 1023px) {
+                    font-size: 40px;
+                    line-height: 40px;
+                    margin-bottom: 64px;
+                }
             }
 
             &-second &-text {
@@ -125,6 +183,11 @@
             &-third {
                 padding-top: 200px;
                 padding-bottom: 174px;
+
+                @media (max-width: 1023px) {
+                    padding-top: 100px;
+                    padding-bottom: 100px; 
+                }
             }
 
             &-third &-title{
@@ -135,6 +198,18 @@
                 letter-spacing: -1px;
                 max-width: 534px;
                 margin-top: 36px;
+
+                @media (max-width: 1023px) {
+                    font-size: 24px;
+                    line-height: 28px;
+                    max-width: 357px;
+                }
+            }
+
+            &-third &-text {
+                @media (max-width: 1023px) {
+                    margin-top: 24px;
+                }
             }
 
             &-caption {
@@ -158,6 +233,11 @@
         z-index: 20;
         margin-top: -979px;
 
+        @media (max-width: 1023px) {
+            padding: 727px 5px 20px 5px;
+            margin-top: -732px;
+        }
+
         &-overlay {
             position: absolute;
             top: 0;
@@ -170,6 +250,11 @@
         &-second {
             padding: 1360px 24px 24px 24px;
             margin-top: -1360px;
+
+            @media (max-width: 1023px) {
+                padding: 822px 5px 20px 5px;
+                margin-top: -826px; 
+            }
         }
 
         &-third {
@@ -191,10 +276,18 @@
 
         &-second {
             padding: 86px 24px 24px 24px;
+
+            @media (max-width: 1023px) {
+                padding: 42px 11px 11px 11px !important;
+            }
         }
 
         &-third {
             padding: 24px 24px 24px 24px;
+        }
+
+        @media (max-width: 1023px) {
+            padding: 0 11px 11px 11px; 
         }
     }
 

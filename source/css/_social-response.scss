@@ -28,8 +28,22 @@
         align-items: flex-start;
         margin-right: 16px;
 
+        @media (max-width: 1159px) {
+           max-width: 50%;
+        }
+
         &:last-child {
             margin-right: 0;
+
+            @media (max-width: 1159px) {
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            @media (max-width: 1159px) {
+                margin-right: 0;
+            }
         }
 
 
