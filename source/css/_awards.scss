@@ -6,10 +6,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 1023px) {
+            .slider-controls-horizontal {
+                display: none;
+            }
+        }
     }
 
     &__tabs {
         display: flex;
+
+        @media (max-width: 1023px) {
+            overflow-x: scroll;
+        }
 
         &-tab {
             background-color: transparent;
@@ -70,12 +80,21 @@
             margin-right: 16px;
             user-select: none;
 
+            @media (max-width: 359px) {
+                max-width: 290px;
+            }
+
             &-main {
                 max-width: 550px;
 
                 @media (max-width: 1023px) {
                     height: 448px;
                     max-width: 336px;
+                }
+
+                @media (max-width: 359px) {
+                    height: 454px;
+                    max-width: 290px;
                 }
             }
 

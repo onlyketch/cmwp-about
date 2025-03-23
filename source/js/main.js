@@ -199,6 +199,91 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Мобильные слайдеры
 
+    if (document.querySelector('.slider-mobile-pillars') !== null) {
+
+        $('.slider-mobile-pillars').slick({
+            infinite: false, 
+            slidesToShow: 1, 
+            slidesToScroll: 1, 
+            variableWidth: true,
+            swipe: true, 
+            touchMove: true,
+            draggable: false,
+            centerMode: false,
+            adaptiveHeight: false,
+            arrows: false,
+            dots: false,
+            touchThreshold: 50,
+            speed: 500
+        });
+
+    }
+
+    if (document.querySelector('.slider-mobile-values') !== null) {
+
+        $('.slider-mobile-values').slick({
+            infinite: false, 
+            slidesToShow: 1, 
+            slidesToScroll: 1, 
+            variableWidth: true,
+            swipe: true, 
+            touchMove: true,
+            draggable: false,
+            centerMode: false,
+            adaptiveHeight: false,
+            arrows: false,
+            dots: false,
+            touchThreshold: 50,
+            speed: 500
+        });
+
+    }
+
+    if (document.querySelector('.slider-mobile-visualization') !== null) {
+
+        $('.slider-mobile-visualization').slick({
+            infinite: false, 
+            slidesToShow: 1, 
+            slidesToScroll: 1, 
+            variableWidth: true,
+            swipe: true, 
+            touchMove: true,
+            draggable: false,
+            centerMode: false,
+            adaptiveHeight: false,
+            arrows: false,
+            dots: false,
+            touchThreshold: 50,
+            speed: 500
+        });
+
+    }
+
+    if (document.querySelector('.slider-mobile-response') !== null) {
+
+        $('.slider-mobile-response').slick({
+            infinite: true, 
+            slidesToShow: 1, 
+            slidesToScroll: 1, 
+            variableWidth: true,
+            swipe: true, 
+            touchMove: true,
+            draggable: false,
+            centerMode: false,
+            adaptiveHeight: false,
+            arrows: false,
+            dots: false,
+            touchThreshold: 30,
+            speed: 400
+        });
+
+
+    }
+
+    
+
+
+
 
 
 
