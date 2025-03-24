@@ -18,7 +18,7 @@
             }
 
             &-second {
-                height: 1354px;
+                height: 1394px;
 
                 @media (max-width: 1023px) {
                     height: 822px;
@@ -135,12 +135,13 @@
             }
 
             &-second {
-                padding: 0;
+                max-width: 1344px;
+                padding: 200px 48px 8px 48px;
+                box-sizing: border-box;
                 top: 0;
-                padding-top: 159px;
 
                 @media (max-width: 1023px) {
-                    padding-top: 126px;
+                    padding: 200px 16px 0 16px;
                 }
             }
 
@@ -256,8 +257,8 @@
         }
 
         &-second {
-            padding: 1360px 24px 24px 24px;
-            margin-top: -1360px;
+            padding: 1390px 24px 24px 24px;
+            margin-top: -1398px;
 
             @media (max-width: 1023px) {
                 padding: 822px 5px 20px 5px;

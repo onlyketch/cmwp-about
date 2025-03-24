@@ -1,11 +1,10 @@
 @use "base" as *;
 
 .hero {
-    height: 902px;
+    height: 650px;
     background-color: $dark;
     color: $white;
     width: 100%;
-    height: 100vh;
     user-select: none;
     background-image: url('../images/hero-back.jpg');
     background-repeat: no-repeat;
@@ -22,8 +21,8 @@
 
     &__wrapper {
         width: 100%;
-        height: 100vh;
-        padding: 150px 0 60px 0;
+        height: 650px;
+        padding: 60px 0 60px 0;
         display: flex;
         box-sizing: border-box;
         flex-direction: column;

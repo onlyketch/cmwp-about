@@ -1649,7 +1649,7 @@ table {
           animation: animate-svg-stroke-prelom-5 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s both, animate-svg-fill-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
 }
 
-@-webkit-keyframes animate-svg-stroke-layers-1 {
+@-webkit-keyframes animate-svg-stroke-lay-1 {
   0% {
     stroke-dashoffset: 393.6449279785px;
     stroke-dasharray: 393.6449279785px;
@@ -1660,7 +1660,7 @@ table {
   }
 }
 
-@keyframes animate-svg-stroke-layers-1 {
+@keyframes animate-svg-stroke-lay-1 {
   0% {
     stroke-dashoffset: 393.6449279785px;
     stroke-dasharray: 393.6449279785px;
@@ -1670,7 +1670,7 @@ table {
     stroke-dasharray: 393.6449279785px;
   }
 }
-@-webkit-keyframes animate-svg-fill-layers-1 {
+@-webkit-keyframes animate-svg-fill-lay-1 {
   0% {
     fill: transparent;
   }
@@ -1678,7 +1678,7 @@ table {
     fill: rgb(243, 243, 243);
   }
 }
-@keyframes animate-svg-fill-layers-1 {
+@keyframes animate-svg-fill-lay-1 {
   0% {
     fill: transparent;
   }
@@ -1687,11 +1687,11 @@ table {
   }
 }
 .quality-card:hover .svg-layers-1 {
-  -webkit-animation: animate-svg-stroke-layers-1 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both, animate-svg-fill-layers-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
-          animation: animate-svg-stroke-layers-1 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both, animate-svg-fill-layers-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+  -webkit-animation: animate-svg-stroke-lay-1 0.5s ease 0s both, animate-svg-fill-lay-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+          animation: animate-svg-stroke-lay-1 0.5s ease 0s both, animate-svg-fill-lay-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
 }
 
-@-webkit-keyframes animate-svg-stroke-layers-2 {
+@-webkit-keyframes animate-svg-stroke-lay-2 {
   0% {
     stroke-dashoffset: 389.6459350586px;
     stroke-dasharray: 389.6459350586px;
@@ -1702,7 +1702,7 @@ table {
   }
 }
 
-@keyframes animate-svg-stroke-layers-2 {
+@keyframes animate-svg-stroke-lay-2 {
   0% {
     stroke-dashoffset: 389.6459350586px;
     stroke-dasharray: 389.6459350586px;
@@ -1713,32 +1713,32 @@ table {
   }
 }
 .quality-card:hover .svg-layers-2 {
-  -webkit-animation: animate-svg-stroke-layers-2 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both, animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
-          animation: animate-svg-stroke-layers-2 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both, animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
+  -webkit-animation: animate-svg-stroke-lay-2 0.5s ease 0.12s both, animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
+          animation: animate-svg-stroke-lay-2 0.5s ease 0.12s both, animate-svg-fill-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
 }
 
-@-webkit-keyframes animate-svg-stroke-layers-3 {
+@-webkit-keyframes animate-svg-stroke-lay-3 {
   0% {
-    stroke-dashoffset: 389.6452331543px;
-    stroke-dasharray: 389.6452331543px;
+    stroke-dashoffset: 393.6451416016px;
+    stroke-dasharray: 393.6451416016px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 389.6452331543px;
+    stroke-dasharray: 393.6451416016px;
   }
 }
 
-@keyframes animate-svg-stroke-layers-3 {
+@keyframes animate-svg-stroke-lay-3 {
   0% {
-    stroke-dashoffset: 389.6452331543px;
-    stroke-dasharray: 389.6452331543px;
+    stroke-dashoffset: 393.6451416016px;
+    stroke-dasharray: 393.6451416016px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 389.6452331543px;
+    stroke-dasharray: 393.6451416016px;
   }
 }
-@-webkit-keyframes animate-svg-fill-layers-3 {
+@-webkit-keyframes animate-svg-fill-lay-3 {
   0% {
     fill: transparent;
   }
@@ -1746,7 +1746,7 @@ table {
     fill: rgb(243, 243, 243);
   }
 }
-@keyframes animate-svg-fill-layers-3 {
+@keyframes animate-svg-fill-lay-3 {
   0% {
     fill: transparent;
   }
@@ -1755,76 +1755,134 @@ table {
   }
 }
 .quality-card:hover .svg-layers-3 {
-  -webkit-animation: animate-svg-stroke-layers-3 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s both, animate-svg-fill-layers-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s both;
-          animation: animate-svg-stroke-layers-3 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s both, animate-svg-fill-layers-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s both;
+  -webkit-animation: animate-svg-stroke-lay-3 0.5s ease 0.24s both, animate-svg-fill-lay-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
+          animation: animate-svg-stroke-lay-3 0.5s ease 0.24s both, animate-svg-fill-lay-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
 }
 
-@-webkit-keyframes animate-svg-stroke-layers-4 {
+@-webkit-keyframes animate-svg-stroke-lay-4 {
   0% {
-    stroke-dashoffset: 393.6448059082px;
-    stroke-dasharray: 393.6448059082px;
+    stroke-dashoffset: 777.2886962891px;
+    stroke-dasharray: 777.2886962891px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 393.6448059082px;
+    stroke-dasharray: 777.2886962891px;
   }
 }
 
-@keyframes animate-svg-stroke-layers-4 {
+@keyframes animate-svg-stroke-lay-4 {
   0% {
-    stroke-dashoffset: 393.6448059082px;
-    stroke-dasharray: 393.6448059082px;
+    stroke-dashoffset: 777.2886962891px;
+    stroke-dasharray: 777.2886962891px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 393.6448059082px;
+    stroke-dasharray: 777.2886962891px;
   }
 }
-@-webkit-keyframes animate-svg-fill-layers-4 {
+@-webkit-keyframes animate-svg-fill-lay-4 {
   0% {
     fill: transparent;
   }
   100% {
-    fill: rgb(243, 243, 243);
+    fill: url("#paint0_linear_585_108");
   }
 }
-@keyframes animate-svg-fill-layers-4 {
+@keyframes animate-svg-fill-lay-4 {
   0% {
     fill: transparent;
   }
   100% {
-    fill: rgb(243, 243, 243);
+    fill: url("#paint0_linear_585_108");
   }
 }
 .quality-card:hover .svg-layers-4 {
-  -webkit-animation: animate-svg-stroke-layers-4 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s both, animate-svg-fill-layers-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1 0.5s both;
-          animation: animate-svg-stroke-layers-4 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s both, animate-svg-fill-layers-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1 0.5s both;
+  -webkit-animation: animate-svg-stroke-lay-4 0.5s ease 0.36s both, animate-svg-fill-lay-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s both;
+          animation: animate-svg-stroke-lay-4 0.5s ease 0.36s both, animate-svg-fill-lay-4 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s both;
 }
 
-@-webkit-keyframes animate-svg-stroke-layers-5 {
+@-webkit-keyframes animate-svg-stroke-lay-5 {
   0% {
-    stroke-dashoffset: 389.6448059082px;
-    stroke-dasharray: 389.6448059082px;
+    stroke-dashoffset: 393.6454467773px;
+    stroke-dasharray: 393.6454467773px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 389.6448059082px;
+    stroke-dasharray: 393.6454467773px;
   }
 }
 
-@keyframes animate-svg-stroke-layers-5 {
+@keyframes animate-svg-stroke-lay-5 {
   0% {
-    stroke-dashoffset: 389.6448059082px;
-    stroke-dasharray: 389.6448059082px;
+    stroke-dashoffset: 393.6454467773px;
+    stroke-dasharray: 393.6454467773px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 389.6448059082px;
+    stroke-dasharray: 393.6454467773px;
+  }
+}
+@-webkit-keyframes animate-svg-fill-lay-5 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(243, 243, 243);
+  }
+}
+@keyframes animate-svg-fill-lay-5 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(243, 243, 243);
   }
 }
 .quality-card:hover .svg-layers-5 {
-  -webkit-animation: animate-svg-stroke-layers-5 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s both, animate-svg-fill-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
-          animation: animate-svg-stroke-layers-5 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s both, animate-svg-fill-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
+  -webkit-animation: animate-svg-stroke-lay-5 0.5s ease 0.48s both, animate-svg-fill-lay-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
+          animation: animate-svg-stroke-lay-5 0.5s ease 0.48s both, animate-svg-fill-lay-5 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
+}
+
+@-webkit-keyframes animate-svg-stroke-lay-6 {
+  0% {
+    stroke-dashoffset: 777.2892456055px;
+    stroke-dasharray: 777.2892456055px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 777.2892456055px;
+  }
+}
+
+@keyframes animate-svg-stroke-lay-6 {
+  0% {
+    stroke-dashoffset: 777.2892456055px;
+    stroke-dasharray: 777.2892456055px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 777.2892456055px;
+  }
+}
+@-webkit-keyframes animate-svg-fill-lay-6 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(13, 24, 35);
+  }
+}
+@keyframes animate-svg-fill-lay-6 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(13, 24, 35);
+  }
+}
+.quality-card:hover .svg-layers-6 {
+  -webkit-animation: animate-svg-stroke-lay-6 0.5s ease 0.6s both, animate-svg-fill-lay-6 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s both;
+          animation: animate-svg-stroke-lay-6 0.5s ease 0.6s both, animate-svg-fill-lay-6 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-mat-1 {
@@ -1849,34 +1907,50 @@ table {
   }
 }
 .quality-card:hover .svg-materials-1 {
-  -webkit-animation: animate-svg-stroke-mat-1 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
-          animation: animate-svg-stroke-mat-1 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+  -webkit-animation: animate-svg-stroke-mat-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both, animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+          animation: animate-svg-stroke-mat-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both, animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-mat-2 {
   0% {
-    stroke-dashoffset: 450px;
-    stroke-dasharray: 450px;
+    stroke-dashoffset: 674.1559448242px;
+    stroke-dasharray: 674.1559448242px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 450px;
+    stroke-dasharray: 674.1559448242px;
   }
 }
 
 @keyframes animate-svg-stroke-mat-2 {
   0% {
-    stroke-dashoffset: 450px;
-    stroke-dasharray: 450px;
+    stroke-dashoffset: 674.1559448242px;
+    stroke-dasharray: 674.1559448242px;
   }
   100% {
     stroke-dashoffset: 0;
-    stroke-dasharray: 450px;
+    stroke-dasharray: 674.1559448242px;
+  }
+}
+@-webkit-keyframes animate-svg-fill-mat-2 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(13, 24, 35);
+  }
+}
+@keyframes animate-svg-fill-mat-2 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(13, 24, 35);
   }
 }
 .quality-card:hover .svg-materials-2 {
-  -webkit-animation: animate-svg-stroke-mat-2 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both;
-          animation: animate-svg-stroke-mat-2 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both;
+  -webkit-animation: animate-svg-stroke-mat-2 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both, animate-svg-fill-mat-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
+          animation: animate-svg-stroke-mat-2 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both, animate-svg-fill-mat-2 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-mat-3 {
@@ -1901,8 +1975,8 @@ table {
   }
 }
 .quality-card:hover .svg-materials-3 {
-  -webkit-animation: animate-svg-stroke-mat-3 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s both;
-          animation: animate-svg-stroke-mat-3 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s both;
+  -webkit-animation: animate-svg-stroke-mat-3 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s both, animate-svg-fill-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
+          animation: animate-svg-stroke-mat-3 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s both, animate-svg-fill-3 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
 }
 
 @font-face {
@@ -2264,6 +2338,14 @@ img {
       -ms-user-select: none;
           user-select: none;
 }
+.quality-card-clickable:hover .quality-card__more-btn {
+  background: #D61336;
+}
+@media (max-width: 1023px) {
+  .quality-card-clickable:hover .quality-card__more-btn {
+    background: #0D1823;
+  }
+}
 .quality-card-clickable.active .quality-card__shapes {
   display: none;
 }
@@ -2408,7 +2490,7 @@ img {
 }
 .text-info__columns-col-text {
   opacity: 0.7;
-  margin-bottom: 16px;
+  margin: 0 0 16px !important;
   line-height: 22px !important;
 }
 .text-info__columns-col-text:last-child {
@@ -2743,6 +2825,9 @@ img {
   line-height: 50px;
   letter-spacing: -3px;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .facts__items-item-value sup {
   font-family: "Roboto Mono", sans-serif;
@@ -2750,8 +2835,8 @@ img {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -1px;
-  padding: 0 0 0 4px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-left: 4px;
 }
 @media (max-width: 1023px) {
   .facts__items-item-value {
@@ -3027,11 +3112,10 @@ img {
 }
 
 .hero {
-  height: 902px;
+  height: 650px;
   background-color: #0D1823;
   color: #FFFFFF;
   width: 100%;
-  height: 100vh;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3053,8 +3137,8 @@ img {
 }
 .hero__wrapper {
   width: 100%;
-  height: 100vh;
-  padding: 150px 0 60px 0;
+  height: 650px;
+  padding: 60px 0 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3135,7 +3219,7 @@ img {
   }
 }
 .parallax-area__wrapper-empty-second {
-  height: 1354px;
+  height: 1394px;
 }
 @media (max-width: 1023px) {
   .parallax-area__wrapper-empty-second {
@@ -3254,13 +3338,15 @@ img {
   }
 }
 .parallax-area__sticky-container-sticky-second {
-  padding: 0;
+  max-width: 1344px;
+  padding: 200px 48px 8px 48px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   top: 0;
-  padding-top: 159px;
 }
 @media (max-width: 1023px) {
   .parallax-area__sticky-container-sticky-second {
-    padding-top: 126px;
+    padding: 200px 16px 0 16px;
   }
 }
 .parallax-area__sticky-container-sticky-second .parallax-area__sticky-container-sticky-image {
@@ -3368,8 +3454,8 @@ img {
   background: rgba(13, 24, 35, 0.4);
 }
 .parallax-area__footer-second {
-  padding: 1360px 24px 24px 24px;
-  margin-top: -1360px;
+  padding: 1390px 24px 24px 24px;
+  margin-top: -1398px;
 }
 @media (max-width: 1023px) {
   .parallax-area__footer-second {
@@ -3541,7 +3627,7 @@ img {
 }
 @media (max-width: 1023px) {
   .years-evetns__items {
-    height: 450px;
+    height: auto;
   }
 }
 .years-evetns__items .slick-track {
@@ -3561,7 +3647,7 @@ img {
 }
 @media (max-width: 1023px) {
   .years-evetns__items .slick-slide {
-    height: 450px;
+    height: auto;
     width: 100% !important;
     padding: 0 11px;
     -webkit-box-sizing: border-box;
@@ -3615,6 +3701,7 @@ img {
   font-size: 14px;
   opacity: 0.7;
   margin-top: 12px;
+  max-width: 311px;
 }
 @media (max-width: 1023px) {
   .years-evetns__items-item-right {

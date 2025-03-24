@@ -220,6 +220,14 @@ img {
         user-select: none;
     }
 
+    &-clickable:hover &__more-btn {
+        background: $red;
+
+        @media (max-width: 1023px) {
+            background: $dark;
+        }
+    }
+
     &-clickable.active &__shapes {
         display: none;
     }
@@ -354,7 +362,7 @@ img {
 
             &-text {
                 opacity: 0.7;
-                margin-bottom: 16px;
+                margin: 0 0 16px !important;
                 line-height: 22px !important;
 
                 &:last-child {
@@ -641,6 +649,7 @@ img {
                 line-height: 50px;
                 letter-spacing: -3px;
                 white-space: nowrap;
+                display: flex;
 
                 sup {
                     font-family: 'Roboto Mono', sans-serif;
@@ -648,12 +657,8 @@ img {
                     font-size: 14px;
                     line-height: 14px;
                     letter-spacing: -1px;
-                    padding: 0 0 0 4px;
-                    margin-bottom: 20px;
-
-                    @media (max-width: 1023px) {
-
-                    }
+                    margin-top: 5px;
+                    margin-left: 4px;
                 }
 
                 @media (max-width: 1023px) {
